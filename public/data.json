@@ -7,7 +7,7 @@
     "rating": 4.7,
     "stock": 10,
     "description": "Stylish sunglasses",
-    "image": "/public/img/sunglass.jpg",
+    "image": "/img/sunglass.jpg",
     "category": "Accessories"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.5,
     "stock": 20,
     "description": "Cool summer hat",
-    "image": "/public/img/hat.jpg",
+    "image": "/img/hat.jpg",
     "category": "Fashion"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.8,
     "stock": 30,
     "description": "Protect your skin",
-    "image": "/public/img/sunskin.jpg",
+    "image": "/img/sunskin.jpg",
     "category": "Skincare"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.3,
     "stock": 25,
     "description": "Comfortable sandals",
-    "image": "/public/img/flipflop.jpg",
+    "image": "/img/flipflop.jpg",
     "category": "Footwear"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.6,
     "stock": 40,
     "description": "Fun beach toy",
-    "image": "/public/img/ball.jpg",
+    "image": "/img/ball.jpg",
     "category": "Accessories"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.4,
     "stock": 15,
     "description": "Light cotton t-shirt",
-    "image": "/public/img/t-shit.jpg",
+    "image": "/img/t-shit.jpg",
     "category": "Fashion"
   }
 ]
