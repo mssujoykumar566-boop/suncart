@@ -28,12 +28,14 @@ const ProductsCard = ({ product }) => {
         <p className="text-xl font-bold text-purple-600">${product.price}</p>
 
         {/* Button */}
-        <Button
-          href={`/products/${product.id}`}
+      <Link  href={`/all-products/${product.id}`}>
+              <Button
+         
           className="block w-full text-center mt-3 bg-purple-500 text-white py-2 rounded-lg hover:bg-purple-600 transition"
         >
           View Details
         </Button>
+      </Link>
       </div>
     </div>
   );

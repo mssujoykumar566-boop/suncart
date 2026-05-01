@@ -25,7 +25,7 @@ const Navbar = () => {
        
       <div className="hidden md:flex items-center gap-6 font-medium">
           <Link href="/" className="hover:text-orange-500">Home</Link>
-          <Link href="/al-products" className="hover:text-orange-500">All Products</Link>
+          <Link href="/all-products" className="hover:text-orange-500">All Products</Link>
           <Link href="/profile" className="hover:text-orange-500">My Profile</Link>
         </div>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Mobile Button */}
         <button
-          className="md:hidden text-2xl"
+          className="md:hidden text-2xl cursor-pointer"
           onClick={() => setOpen(!open)}
         >
           ☰
@@ -52,13 +52,15 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      
-        <div className="md:hidden bg-white shadow px-4 pb-4 space-y-3">
-          <Link href="/" className="block">Home</Link>
-          <Link href="/products" className="block">Products</Link>
-          <Link href="/profile" className="block">Profile</Link>
-
-        </div>
+{
+  open && (
+    <div className="md:hidden bg-white shadow px-4 pb-4 space-y-3">
+      <Link href="/" className="block">Home</Link>
+      <Link href="/all-products"  className="block"> All Products</Link>
+      <Link href="/profile" className="block">Profile</Link>
+    </div>
+  )
+}
     
     </div>
   );
