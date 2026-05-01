@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { IoSunnySharp } from "react-icons/io5";
 
 const Banner = () => {
   return (
@@ -15,12 +16,15 @@ const Banner = () => {
       
       <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center">
         <div className="text-white px-4">
+            <div className="flex items-center gap-1">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Summer Sale 50% OFF ☀️
+            Summer Sale 50% OFF 
           </h1>
+          <IoSunnySharp className="text-yellow-400 w-14 h-14" />
+            </div>
 
           <p className="mb-6 text-lg md:text-xl">
-            Upgrade your summer style with hot deals 🔥
+            Upgrade your summer style with hot deals
           </p>
 
           <Link href="/products">
