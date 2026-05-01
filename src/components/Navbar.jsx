@@ -93,7 +93,7 @@ const Navbar = () => {
             All Products
           </Link>
           <Link href="/profile" className="block">
-            Profile
+            My Profile
           </Link>
         </div>
       )}
