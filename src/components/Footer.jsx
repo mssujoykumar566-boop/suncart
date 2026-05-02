@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdSunnySnowing } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -10,8 +11,9 @@ const Footer = () => {
         
         {/* Logo + About */}
         <div className="flex flex-col items-center md:items-center">
-          <h2 className="text-2xl font-bold text-white mb-3">
-            SunCart ☀️
+          <h2 className="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+            SunCart 
+            <MdSunnySnowing className="text-yellow-400 w-9 h-9" />
           </h2>
           <p className="text-sm">
             Your one-stop summer essentials store. Discover trendy fashion,

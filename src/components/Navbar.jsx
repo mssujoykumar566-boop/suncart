@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 z-50 backdrop-blur bg-white/70 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
+       
         <div className="flex items-center gap-1.5">
           <Link href="/" className="text-2xl font-bold text-orange-500">
             SunCart

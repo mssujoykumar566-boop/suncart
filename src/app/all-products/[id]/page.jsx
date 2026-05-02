@@ -1,15 +1,29 @@
+
+import Loader from "@/components/Loader";
 import { Button, Chip } from "@heroui/react";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import { FaStar } from "react-icons/fa";
 
 const ProductsDetailsPage = async ({ params }) => {
   const { id } = await params;
   // console.log(id,'id')
   const res = await fetch("https://suncart-smoky.vercel.app/data.json");
+ 
   const products = await res.json();
+ 
   // console.log(products,'products')
   const product = products.find((p) => p.id == id);
   // console.log(product,'product')
+  if (!product) {
+    notFound();
+  }
+
+  
+
+  // const data = await res.json();
+
+ 
 
   return (
     <div className="min-h-screen bg-base-200 flex items-center justify-center p-5">

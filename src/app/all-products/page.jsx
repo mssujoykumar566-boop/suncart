@@ -8,6 +8,7 @@ const AllProductsPage = async ({searchParams}) => {
     const res = await fetch('https://suncart-smoky.vercel.app/data.json');
     const products = await res.json()
     // console.log(products,'products')
+    
 
     
   const filteredProducts = category
