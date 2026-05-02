@@ -47,10 +47,14 @@ const Navbar = () => {
           {!user && (
             <ul className="flex gap-4 items-center  text-sm">
               <li>
-                <Link href={"/signup"}>SignUp</Link>
+                <Link href={"/signup"}>
+                <Button>SignUp</Button>
+                </Link>
               </li>
               <li>
-                <Link href={"/signin"}>SignIn</Link>
+                <Link href={"/signin"}> 
+                <Button> SignIn</Button>
+                </Link>
               </li>
             </ul>
           )}

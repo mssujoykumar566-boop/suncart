@@ -11,7 +11,7 @@ const PopularProducts = async ({ searchParams }) => {
   const filteredProducts = category
     ? data.filter((product) => product.category === category)
     : products;
-  // console.log(products)
+  console.log(filteredProducts, "filteredProducts");
   return (
     <div>
       <h1 className="text-2xl font-bold text-center my-5">Popular Products</h1>
