@@ -5,12 +5,13 @@ import React from 'react';
 const Category = async () => {
        const res = await fetch('https://suncart-smoky.vercel.app/data.json');
     const categories = await res.json();
+    // console.log(categories,'categories')
     
     return (
        <div className="mb-5 flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
   {
-  categories.map((category) => (
-   <Link  key={category.id} href={`?category=${category.name.toLowerCase()}`}>
+    categories.map((category) => (
+   <Link  key={category.id} href={`?category=${category.category.toLowerCase()}`}>
     <Button
     size='sm'
      
